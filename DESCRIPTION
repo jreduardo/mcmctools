@@ -1,0 +1,14 @@
+Package: mcmtools
+Version: 0.0.0
+Title: Useful Tools to Manipulate MCMC Objects
+Description: Implements functions to manipulate MCMC objects (apply
+    thinning, burn-in, select variables, merge chains, etc.) in the
+    context of Bayesian inference.
+Authors@R: person(given = "Eduardo", family = "Ribeiro Jr",
+                  email = "jreduardo@usp.br", role = c("aut", "cre"))
+Depends:
+    R (>= 3.1)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
