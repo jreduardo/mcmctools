@@ -133,6 +133,7 @@ mct_burnin.mcmc <- function(object, burnin) {
     out <- coda::mcmc(data = out,
                       end = mcpar[2L],
                       thin = mcpar[3L])
+    if (burnin == 0L) out <- object
     return(out)
 }
 
