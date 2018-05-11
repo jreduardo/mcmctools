@@ -1,4 +1,4 @@
-Package: mcmtools
+Package: mcmctools
 Version: 0.0.0
 Title: Useful Tools to Manipulate MCMC Objects
 Description: Implements functions to manipulate MCMC objects (apply
@@ -6,7 +6,7 @@ Description: Implements functions to manipulate MCMC objects (apply
     context of Bayesian inference.
 Authors@R: person(given = "Eduardo", family = "Ribeiro Jr",
                   email = "jreduardo@usp.br", role = c("aut", "cre"))
-Depends: 
+Depends:
     R (>= 3.1),
     coda
 License: GPL-3

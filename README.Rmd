@@ -15,11 +15,11 @@ knitr::opts_chunk$set(
 
 # `mcmtools`: Useful tools to manipulate MCMC objects
 
-The goal of mcmtools is to ...
+The goal of mcmctools is to ...
 
 ## Installation
 
-You can install the development version of `mcmtools` from
+You can install the development version of `mcmctools` from
 [GitHub](https://github.com/jreduardo/mcmctools) with:
 
 ``` r

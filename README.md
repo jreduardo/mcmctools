@@ -3,12 +3,12 @@
 `mcmtools`: Useful tools to manipulate MCMC objects
 ===================================================
 
-The goal of mcmtools is to ...
+The goal of mcmctools is to ...
 
 Installation
 ------------
 
-You can install the development version of `mcmtools` from [GitHub](https://github.com/jreduardo/mcmctools) with:
+You can install the development version of `mcmctools` from [GitHub](https://github.com/jreduardo/mcmctools) with:
 
 ``` r
 # install.packages("devtools")
