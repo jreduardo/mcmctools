@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono|Yanone+Kaffeesatz');
+
+body {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+pre, code {
+    font-family: "Ubuntu Mono", monospace;
+}
+
+.title {
+    text-align: center;
+}
