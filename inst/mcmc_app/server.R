@@ -9,36 +9,8 @@ library(magrittr)
 library(mcmctools)
 library(latticeExtra)
 
-# Datas
+# Trellis graphics style
 ps_lattice <- list(strip.background = list(col = "gray80"))
-data("line", package = "coda")
-object <- line
-
-library(rjags)
-str_model <- "
- model {
-   for (i in 1:n) {
-     mu[i] <- X[i, ] %*% beta[]
-     y[i] ~ dnorm(mu[i], tau)
-   }
-   for (j in 1:p) {
-     beta[j] ~ dnorm(0, 0.001)
-   }
-   tau ~ dgamma(0.001, 0.001)
- }
-"
-X <- model.matrix(~poly(speed, 5), data = as.data.frame(scale(cars)))
-X <- model.matrix(~poly(speed, 5), data = cars)
-jags <- jags.model(file = textConnection(str_model),
-                   data = list(
-                       n = nrow(X),
-                       p = ncol(X),
-                       X = X,
-                       y = cars$dist),
-                   n.chains = 3)
-object <- coda.samples(model = jags,
-                       variable.names = c("beta", "tau"),
-                       n.iter = 1000)
 
 # Init the server
 shinyServer(
