@@ -125,7 +125,7 @@ shinyServer(
                         width = 6,
                         numericInput(inputId = "TRACE_SIZE",
                                      label = "Size of window",
-                                     value = 50L,
+                                     value = 10L,
                                      min = 10L,
                                      max = niter(samples()))
                     ),
@@ -151,7 +151,7 @@ shinyServer(
         # Main Panel
         output$UImain <- renderUI({
             if (input$grandTab == "Setup") {
-                h1("Markdown Information")
+                h1("MCMC Tools - Shiny App")
             }
             else if (input$grandTab == "Diagnosis") {
                 uiOutput("OUTdiagnosis")

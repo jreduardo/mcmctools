@@ -37,10 +37,10 @@ shinyUI(
                         hr(),
                         uiOutput("UIdiagnosis"),
                         uiOutput("UIdiagnosis_options")
-                    ),
-                    tabPanel(
-                        title = "Analysis"
-                    )
+                    )# ,
+                    # tabPanel(
+                    #     title = "Analysis"
+                    # )
                 ),
                 verbatimTextOutput("test")
             ),
